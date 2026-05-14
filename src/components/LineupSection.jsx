@@ -33,9 +33,6 @@ export default function LineupSection() {
           </div>
         </button>
 
-        <p className="px-4 py-2 text-brand-muted text-xs">
-          Drop new lineup images in <code className="text-brand-green">public/squad-list/</code> and update <code className="text-brand-green">mockData.js</code>
-        </p>
       </div>
 
       {/* Lightbox */}
