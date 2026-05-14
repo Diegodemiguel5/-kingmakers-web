@@ -138,7 +138,7 @@ export default function PlayersGallery() {
           <img
             src={lightbox.image}
             alt={lightbox.fullName}
-            className="max-w-sm w-full max-h-[65vh] rounded-2xl object-cover object-top shadow-2xl"
+            className="max-w-sm w-full max-h-[70vh] rounded-2xl object-contain shadow-2xl"
             onClick={e => e.stopPropagation()}
           />
 
