@@ -1,0 +1,81 @@
+{
+  "lastUpdated": "2026-05-14T15:07:00.937Z",
+  "standings": [
+    {
+      "position": 1,
+      "team": "Celonis",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "points": 0
+    },
+    {
+      "position": 2,
+      "team": "Dckinesis Fisioterapia",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "points": 0
+    },
+    {
+      "position": 3,
+      "team": "Intrum",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "points": 0
+    },
+    {
+      "position": 4,
+      "team": "Kingmakers",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "points": 0
+    }
+  ],
+  "matches": [
+    {
+      "id": 1,
+      "home": "Intrum",
+      "away": "Kingmakers",
+      "date": "2026-05-18",
+      "time": "20:55",
+      "venue": "Campo RG1",
+      "round": "Jornada 1",
+      "isNext": true
+    },
+    {
+      "id": 2,
+      "home": "Celonis",
+      "away": "Kingmakers",
+      "date": "2026-05-25",
+      "time": "21:50",
+      "venue": "Campo RG2",
+      "round": "Jornada 2",
+      "isNext": false
+    },
+    {
+      "id": 3,
+      "home": "Kingmakers",
+      "away": "Dckinesis Fisioterapia",
+      "date": "2026-06-01",
+      "time": "20:00",
+      "venue": "Campo RG2",
+      "round": "Jornada 3",
+      "isNext": false
+    }
+  ]
+}
