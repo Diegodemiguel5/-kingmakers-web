@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T07:11:25.483Z",
+  "lastUpdated": "2026-05-20T11:21:36.167Z",
   "standings": [
     {
       "position": 1,
@@ -55,7 +55,12 @@
       "time": "20:55",
       "venue": "Campo RG1",
       "round": "Jornada 1",
-      "isNext": false
+      "isNext": false,
+      "score": {
+        "home": 12,
+        "away": 1
+      },
+      "status": "Ended"
     },
     {
       "id": 2,

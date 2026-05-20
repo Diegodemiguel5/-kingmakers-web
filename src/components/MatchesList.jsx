@@ -17,13 +17,15 @@ function daysUntil(dateStr) {
 }
 
 export default function MatchesList({ matches = [] }) {
+  const upcoming = matches.filter(m => !m.score)
+
   return (
     <section className="animate-slide-up">
       <h2 className="text-xs font-bold uppercase tracking-widest text-brand-muted mb-3">
         Upcoming Matches
       </h2>
       <div className="flex flex-col gap-3">
-        {matches.map((match) => {
+        {upcoming.map((match) => {
           const countdown = daysUntil(match.date)
           const opponent = match.home === OWN_TEAM ? match.away : match.home
           const isHome = match.home === OWN_TEAM
@@ -95,6 +97,9 @@ export default function MatchesList({ matches = [] }) {
             </div>
           )
         })}
+        {upcoming.length === 0 && (
+          <p className="text-brand-muted text-sm text-center py-4">No upcoming matches scheduled.</p>
+        )}
       </div>
     </section>
   )

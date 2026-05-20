@@ -21,7 +21,9 @@ export const matches = [
     time: '20:55',
     venue: 'Campo RG1',
     round: 'Jornada 1',
-    isNext: true,
+    isNext: false,
+    score: { home: 12, away: 1 },
+    status: 'Ended',
   },
   {
     id: 2,

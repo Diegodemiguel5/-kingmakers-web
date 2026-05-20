@@ -3,6 +3,7 @@ import Header from './components/Header'
 import StandingsTable from './components/StandingsTable'
 import MatchesList from './components/MatchesList'
 import LineupSection from './components/LineupSection'
+import PlayedMatches from './components/PlayedMatches'
 import PlayersGallery from './components/PlayersGallery'
 import { useTeamData } from './hooks/useTeamData'
 
@@ -44,6 +45,7 @@ export default function App() {
               <>
                 <StandingsTable standings={standings} />
                 <MatchesList matches={matches} />
+                <PlayedMatches matches={matches} />
               </>
             )}
 

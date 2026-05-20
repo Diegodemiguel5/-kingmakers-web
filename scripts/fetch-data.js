@@ -190,7 +190,13 @@ async function fetchMatches() {
       const dateISO = parseDDMMYYYY(dateRaw)
       if (!dateISO) return
 
-      matches.push({
+      // Parse score from the separator cell (e.g. "12  -  1")
+      const scoreRaw = cellTexts[6] ?? ''
+      const scoreMatch = scoreRaw.match(/(\d+)\s*-\s*(\d+)/)
+      const score  = scoreMatch ? { home: parseInt(scoreMatch[1], 10), away: parseInt(scoreMatch[2], 10) } : null
+      const status = score ? 'Ended' : null
+
+      const entry = {
         id: matchId++,
         home: toTitleCase(home),
         away: toTitleCase(away),
@@ -199,7 +205,11 @@ async function fetchMatches() {
         venue: venue ? `Campo ${venue}` : 'Mirasierra',
         round: currentRound,
         isNext: false,
-      })
+      }
+      if (score)  entry.score  = score
+      if (status) entry.status = status
+
+      matches.push(entry)
     })
   })
 
