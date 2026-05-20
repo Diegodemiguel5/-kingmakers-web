@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const OWN_TEAM = 'Kingmakers'
 
 function formatDate(dateStr) {
@@ -16,6 +18,8 @@ function getResult(match) {
 
 export default function PlayedMatches({ matches = [] }) {
   const played = matches.filter(m => m.score)
+  const [lightbox, setLightbox] = useState(null) // holds the image URL
+
   if (!played.length) return null
 
   return (
@@ -96,11 +100,40 @@ export default function PlayedMatches({ matches = [] }) {
               {/* Bottom row */}
               <div className="flex items-center justify-between mt-3 pt-3 border-t border-brand-border">
                 <span className="text-brand-muted text-xs">{match.venue}</span>
+                {match.lineupImage && (
+                  <button
+                    onClick={() => setLightbox(match.lineupImage)}
+                    className="flex items-center gap-1.5 text-brand-green text-xs font-semibold hover:text-white transition-colors"
+                  >
+                    <span>📋</span> View lineup
+                  </button>
+                )}
               </div>
             </div>
           )
         })}
       </div>
+
+      {/* Lineup lightbox */}
+      {lightbox && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 animate-fade-in"
+          onClick={() => setLightbox(null)}
+        >
+          <img
+            src={lightbox}
+            alt="Match lineup"
+            className="max-w-full max-h-full rounded-xl object-contain"
+            onClick={e => e.stopPropagation()}
+          />
+          <button
+            className="absolute top-4 right-4 text-white bg-white/10 rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold hover:bg-white/20 transition-colors"
+            onClick={() => setLightbox(null)}
+          >
+            ×
+          </button>
+        </div>
+      )}
     </section>
   )
 }

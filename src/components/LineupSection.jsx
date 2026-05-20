@@ -16,27 +16,34 @@ export default function LineupSection() {
           <span className="text-brand-muted text-xs">{lineupLabel}</span>
         </div>
 
-        <button
-          onClick={() => setLightbox(true)}
-          className="w-full relative group block"
-          aria-label="View full lineup"
-        >
-          <img
-            src={lineupImage}
-            alt="Squad lineup"
-            className="w-full object-cover max-h-96 transition-transform duration-300 group-hover:scale-[1.02]"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-            <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/60 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-              Tap to enlarge
-            </span>
+        {lineupImage ? (
+          <button
+            onClick={() => setLightbox(true)}
+            className="w-full relative group block"
+            aria-label="View full lineup"
+          >
+            <img
+              src={lineupImage}
+              alt="Squad lineup"
+              className="w-full object-cover max-h-96 transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/60 text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                Tap to enlarge
+              </span>
+            </div>
+          </button>
+        ) : (
+          <div className="flex flex-col items-center justify-center py-10 text-center px-4">
+            <p className="text-3xl mb-3">📋</p>
+            <p className="text-white font-semibold text-sm">Lineup not published yet</p>
+            <p className="text-brand-muted text-xs mt-1">Check back closer to match day</p>
           </div>
-        </button>
-
+        )}
       </div>
 
       {/* Lightbox */}
-      {lightbox && (
+      {lightbox && lineupImage && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 animate-fade-in"
           onClick={() => setLightbox(false)}

@@ -24,6 +24,7 @@ export const matches = [
     isNext: false,
     score: { home: 12, away: 1 },
     status: 'Ended',
+    lineupImage: '/squad-list/Match 1_Intrum.jpg',
   },
   {
     id: 2,
@@ -73,6 +74,7 @@ export const players = [
 ]
 
 // ─── LINEUP IMAGE ─────────────────────────────────────────────────────────────
-// Replace with the latest lineup image (drop it into public/squad-list/)
-export const lineupImage = '/squad-list/Match 1_Intrum.jpg'
-export const lineupLabel = 'vs Intrum — Jornada 1'
+// Drop the next match lineup into public/squad-list/ and update these two lines.
+// Set lineupImage to null when no lineup is ready yet.
+export const lineupImage = null
+export const lineupLabel = 'vs Celonis — Jornada 2'
