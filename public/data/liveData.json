@@ -60,7 +60,8 @@
         "home": 12,
         "away": 1
       },
-      "status": "Ended"
+      "status": "Ended",
+      "lineupImage": "/squad-list/Match 1_Intrum.jpg"
     },
     {
       "id": 2,
