@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-05-14T15:07:00.937Z",
+  "lastUpdated": "2026-05-20T07:11:25.483Z",
   "standings": [
     {
       "position": 1,
+      "team": "Intrum",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "points": 3
+    },
+    {
+      "position": 2,
       "team": "Celonis",
       "played": 0,
       "won": 0,
@@ -10,22 +21,11 @@
       "lost": 0,
       "gf": 0,
       "ga": 0,
-      "points": 0
-    },
-    {
-      "position": 2,
-      "team": "Dckinesis Fisioterapia",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "points": 0
+      "points": 3
     },
     {
       "position": 3,
-      "team": "Intrum",
+      "team": "Dckinesis Fisioterapia",
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -55,7 +55,7 @@
       "time": "20:55",
       "venue": "Campo RG1",
       "round": "Jornada 1",
-      "isNext": true
+      "isNext": false
     },
     {
       "id": 2,
@@ -65,7 +65,7 @@
       "time": "21:50",
       "venue": "Campo RG2",
       "round": "Jornada 2",
-      "isNext": false
+      "isNext": true
     },
     {
       "id": 3,
