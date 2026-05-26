@@ -35,6 +35,8 @@ export const matches = [
     venue: 'Campo RG2',
     round: 'Jornada 2',
     isNext: false,
+    score: { home: 12, away: 0 },
+    status: 'Ended',
   },
   {
     id: 3,
@@ -77,4 +79,4 @@ export const players = [
 // Drop the next match lineup into public/squad-list/ and update these two lines.
 // Set lineupImage to null when no lineup is ready yet.
 export const lineupImage = null
-export const lineupLabel = 'vs Celonis — Jornada 2'
+export const lineupLabel = 'vs Dckinesis Fisioterapia — Jornada 3'

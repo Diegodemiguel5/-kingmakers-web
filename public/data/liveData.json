@@ -1,19 +1,8 @@
 {
-  "lastUpdated": "2026-05-20T11:21:36.167Z",
+  "lastUpdated": "2026-05-26T16:06:41.526Z",
   "standings": [
     {
       "position": 1,
-      "team": "Intrum",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "points": 3
-    },
-    {
-      "position": 2,
       "team": "Celonis",
       "played": 0,
       "won": 0,
@@ -24,7 +13,7 @@
       "points": 3
     },
     {
-      "position": 3,
+      "position": 2,
       "team": "Dckinesis Fisioterapia",
       "played": 0,
       "won": 0,
@@ -32,7 +21,18 @@
       "lost": 0,
       "gf": 0,
       "ga": 0,
-      "points": 0
+      "points": 3
+    },
+    {
+      "position": 3,
+      "team": "Intrum",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "points": 3
     },
     {
       "position": 4,
@@ -60,8 +60,7 @@
         "home": 12,
         "away": 1
       },
-      "status": "Ended",
-      "lineupImage": "/squad-list/Match 1_Intrum.jpg"
+      "status": "Ended"
     },
     {
       "id": 2,
@@ -71,7 +70,12 @@
       "time": "21:50",
       "venue": "Campo RG2",
       "round": "Jornada 2",
-      "isNext": true
+      "isNext": false,
+      "score": {
+        "home": 12,
+        "away": 0
+      },
+      "status": "Ended"
     },
     {
       "id": 3,
@@ -81,7 +85,7 @@
       "time": "20:00",
       "venue": "Campo RG2",
       "round": "Jornada 3",
-      "isNext": false
+      "isNext": true
     }
   ]
 }
