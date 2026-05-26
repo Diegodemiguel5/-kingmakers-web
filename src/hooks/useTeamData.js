@@ -27,7 +27,7 @@ export function useTeamData() {
   })
 
   useEffect(() => {
-    fetch('/data/liveData.json')
+    fetch(`/data/liveData.json?v=${Date.now()}`, { cache: 'no-store' })
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()
